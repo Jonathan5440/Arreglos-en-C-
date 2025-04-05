@@ -41,5 +41,13 @@ void ejecutarPrograma() {
                 cout << "Opcion invalida. Intente de nuevo." << endl;
         }
 
-    } while (opcion != 4);
+    } while (opcion !
+}
+void mostrarMenu() {
+    cout << "\n--- AGENDA DE TAREAS ---" << endl;
+    cout << "1. Agregar tarea" << endl;
+    cout << "2. Ver tareas" << endl;
+    cout << "3. Eliminar tarea" << endl;
+    cout << "4. Salir" << endl;
+    cout << "Seleccione una opcion: ";
 }
