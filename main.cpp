@@ -51,3 +51,13 @@ void mostrarMenu() {
     cout << "4. Salir" << endl;
     cout << "Seleccione una opcion: ";
 }
+void agregarTarea(string tareas[], int& cantidad) {
+    if (cantidad < MAX_TAREAS) {
+        cout << "Ingrese la tarea: ";
+        getline(cin, tareas[cantidad]);  // Se agrega la tarea en la posicion 'cantidad'
+        cantidad++;  // Se incrementa el contador de tareas
+        cout << "Tarea agregada con exito." << endl;
+    } else {
+        cout << "¡Lista de tareas llena!" << endl;
+    }
+}
