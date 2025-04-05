@@ -41,7 +41,7 @@ void ejecutarPrograma() {
                 cout << "Opcion invalida. Intente de nuevo." << endl;
         }
 
-    } while (opcion !
+    } while (opcion !=4);
 }
 void mostrarMenu() {
     cout << "\n--- AGENDA DE TAREAS ---" << endl;
