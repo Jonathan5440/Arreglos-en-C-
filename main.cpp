@@ -61,6 +61,17 @@ void agregarTarea(string tareas[], int& cantidad) {
         cout << "¡Lista de tareas llena!" << endl;
     }
 }
+void verTareas(const string tareas[], int cantidad) {
+    if (cantidad == 0) {
+        cout << "No hay tareas pendientes." << endl;
+    } else {
+        cout << "\n=== TAREAS PENDIENTES ===" << endl;
+        for (int i = 0; i < cantidad; i++) {
+            cout << i + 1 << ". " << tareas[i] << endl;  // Se imprime al array
+        }
+    }
+}
+
 void eliminarTarea(string tareas[], int& cantidad) {
     if (cantidad == 0) {
         cout << "No hay tareas para eliminar." << endl;
