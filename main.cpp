@@ -61,3 +61,23 @@ void agregarTarea(string tareas[], int& cantidad) {
         cout << "¡Lista de tareas llena!" << endl;
     }
 }
+void eliminarTarea(string tareas[], int& cantidad) {
+    if (cantidad == 0) {
+        cout << "No hay tareas para eliminar." << endl;
+    } else {
+        int num;
+        cout << "Ingrese el numero de la tarea a eliminar: ";
+        cin >> num;
+        cin.ignore();  // Limpiar el buffer
+
+        if (num < 1 || num > cantidad) {
+            cout << "Numero invalido." << endl;
+        } else {
+            for (int i = num - 1; i < cantidad - 1; i++) {
+                tareas[i] = tareas[i + 1];  // Desplazamiento de tareas
+            }
+            cantidad--;  // Se reduce el contador de tareas
+            cout << "Tarea eliminada." << endl;
+        }
+    }
+}
